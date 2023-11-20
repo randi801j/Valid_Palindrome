@@ -1,0 +1,15 @@
+var isPalindrome = function(s) {
+    const cleaned= s.replace(/[^a-z0-9]/gi,'').toLowerCase();
+
+    const reversed= cleaned.split('').reverse().join('');
+    return cleaned===reversed;
+    
+};
+
+// check if characters cap
+// if capp then turn them to lowercase 
+// check if have non-alphanumeric charcters
+// if yes then remove
+// make all charaters lowercase
+// split each letter and reverse 
+// compare to see if the reverse is equal to the orginal
